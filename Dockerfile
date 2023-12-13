@@ -3,7 +3,7 @@ FROM debian:latest
 RUN apt update
 RUN apt install bzip2
 
-RUN useradd -m -d /serverpufferd
+RUN useradd -m -d /server pufferd
 WORKDIR /server
 USER pufferd
 ENV HOME /server
