@@ -2,6 +2,7 @@
 FROM debian:latest
 RUN apt update
 RUN apt install bzip2
+RUN mkdir /pufferpanel
 
 #RUN useradd -m -d /server pufferd
 #WORKDIR /server
