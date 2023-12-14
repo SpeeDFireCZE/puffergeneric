@@ -2,7 +2,7 @@
 FROM debian:latest
 RUN apt update
 RUN apt install bzip2
-RUN apt install wget
+RUN apt install -y wget
 RUN mkdir /server
 #RUN useradd -m -d /server pufferd
 #WORKDIR /server
