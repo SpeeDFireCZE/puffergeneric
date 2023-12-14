@@ -4,6 +4,7 @@ RUN apt update
 RUN apt install bzip2
 RUN apt-get -y install wget
 RUN mkdir /server
+RUN chmod 777 -R /server
 #RUN useradd -m -d /server pufferd
 #WORKDIR /server
 #USER pufferd
