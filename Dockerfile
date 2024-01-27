@@ -5,7 +5,11 @@ RUN apt install bzip2
 RUN apt upgrade
 RUN dpkg --add-architecture i386
 RUN apt update
-RUN apt install lib32gcc-10-dev lib32stdc++6 libc6-i386 libcurl4-gnutls-dev:i386 libsdl2-2.0-0:i386
+RUN apt install lib32gcc-10-dev 
+RUN apt install lib32stdc++6 
+RUN apt install libc6-i386 
+RUN apt install libcurl4-gnutls-dev:i386 
+RUN apt install libsdl2-2.0-0:i386
 RUN wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 RUN tar -xvzf steamcmd_linux.tar.gz
 RUN ./steamcmd.sh +quit
